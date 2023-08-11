@@ -23,21 +23,22 @@ def get_filters(city,month,day):
       (str) city - name of the city to analyze
       (str) month - name of the month to filter by, or "ALL" to apply no month filter
       (str) day - name of the day of week to filter by, or "ALL" to apply no day filter
+      Although stored as a string, the user input is a number.
   """
   print('Hello! Let\'s explore some US bikeshare data!')
-  #get city via user input
+  #get city by capturing the number input by the user
   while True:
     print('Please select one of the Cities below by entering a number 1 - 3:\n1: Chicago\n2: New York City\n3: Washington')
     #get user input here
     city_num = input('Please enter a number 1 - 3:')
     
-    #check user input
+    #check user input is a number from 1 - 3
     if city_num not in['1','2','3']:
       print('Please Select a City by entering a number 1 - 3:')
     else:     
       break
 
-  #set city name  
+  #set city name by checking the number input by the user
   if int(city_num) == 1:
     city = 'chicago'
   elif int(city_num) == 2:
@@ -45,13 +46,13 @@ def get_filters(city,month,day):
   elif int(city_num) == 3:
     city = 'washington'
       
- #get month via user input
+ #get month by capturing the number input by the user
   while True:
     print('Please Select a Month by entering a number 1 - 6:\n1 = January etc.\nEnter 0 to select ALL')
     #get user input here
     month_num = input()
 
-    #check user input
+    #check the number the user input
     if month_num not in['0','1','2','3','4','5','6']:
       print('Please Try Again')
     else:
@@ -63,13 +64,13 @@ def get_filters(city,month,day):
         month = datetime.date(1900, int(month_num), 1).strftime('%B')
       break
 
-  # get Day via user input
+  # get Day by capturing the number input by the user
   while True:
     print('Please Select a Day by entering a number 1 - 7:\n1 = Monday etc.\nEnter 0 to select ALL')
     #get user input
     day_num = input()
 
-    #check user input
+    #check user input is a number from 0 - 7
     if day_num not in['0','1','2','3','4','5','6','7']:
       print('Please Try Again')
     else:
@@ -92,6 +93,7 @@ def load_data(city, month, day):
     (str) city - name of the city to analyze
     (str) month - name of the month to filter by, or "ALL" to apply no month filter
     (str) day - name of the day of week to filter by, or "ALL" to apply no day filter
+    Although stored as a string, the user input is a number.
   Returns:
     df - pandas DataFrame containing city data filtered by month and day
   """
