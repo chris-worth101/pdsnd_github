@@ -25,7 +25,9 @@ BikeShare_5_Main Final.py
 Read Me.txt
 
 
-
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+In the making of this project, I made reference to the web site Stack Overflow
+https://stackoverflow.com/
 
+to see examples of how some code should be written and how some functions should be used.
+For example the use of 'df.iloc' to filter a data frame by a set number of rows.
