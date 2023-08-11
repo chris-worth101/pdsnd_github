@@ -4,10 +4,14 @@
 22nd of July 2023
 
 ### Project Title
-Replace the Project Title
+Bike Share Project
 
 ### Description
-Describe what your project is about and what it does
+This is a Python project that will allow us to explore the Bike Share data from 3 cities. Through user interaction we will be able to answer some questions like:
+# What are the Most Popular Stations?
+# What is the Average Trip Duration?
+# Some information about users of the Bike Share scheme.
+
 
 ### Files used
 Include the files used
