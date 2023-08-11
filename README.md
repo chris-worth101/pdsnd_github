@@ -19,6 +19,12 @@ There are 3 data files in this project. They are:
 * new_york_city.csv
 * washington.csv
 
+**The Python file is:**
+BikeShare_5_Main Final.py
+**There is also a .txt Read Me file:**
+Read Me.txt
+
+
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
